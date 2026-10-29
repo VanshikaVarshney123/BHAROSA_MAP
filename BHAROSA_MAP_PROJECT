@@ -1,0 +1,44 @@
+.animate-sonar-orange-delay {
+  animation: sonarOrangeRing 2.4s cubic-bezier(0.2, 0.8, 0.4, 1) infinite 1.2s;
+.leaflet-tooltip {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+}
+/* Orange Dashed line animation */
+@keyframes dashTravel {
+  to {
+    stroke-dashoffset: -36;
+  }
+.leaflet-tooltip-top:before,
+.leaflet-tooltip-bottom:before,
+.leaflet-tooltip-left:before,
+.leaflet-tooltip-right:before {
+  display: none !important;
+}
+.animate-dash-orange {
+  stroke-dasharray: 6 6;
+  animation: dashTravel 1.2s linear infinite;
+.leaflet-interactive:focus {
+  outline: none !important;
+}
+/* Subtle light scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+/* Pulsing Station Markers */
+.custom-station-icon {
+  background: transparent !important;
+  border: none !important;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
